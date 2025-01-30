@@ -1,4 +1,4 @@
-import type { AppRouter } from "@/server"
+import { type AppRouter } from "@acme/trpc"
 import { createClient } from "jstack"
 
 /**

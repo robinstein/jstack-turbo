@@ -1,0 +1,19 @@
+{
+  "name": "@acme/trpc",
+  "module": "src/index.ts",
+  "type": "module",
+  "dependencies": {
+    "@acme/db": "workspace:*",
+    "hono": "^4.6.19",
+    "jstack": "^1.0.0",
+    "superjson": "^2.2.1"
+  },
+  "devDependencies": {
+    "@acme/tsconfig": "workspace:*",
+    "@types/bun": "latest",
+    "typescript": "^5.7.3"
+  },
+  "exports": {
+    ".": "./src/index.ts"
+  }
+}
