@@ -1,16 +1,17 @@
 {
-  "name": "jstack-turbo",
+  "name": "@acme/next",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next build",
+    "build": "bun with-env next build",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
     "db:push": "drizzle-kit push",
     "db:studio": "drizzle-kit studio",
-    "dev": "next dev",
+    "dev": "bun with-env next dev",
     "lint": "next lint",
-    "start": "next start"
+    "start": "next start",
+    "with-env": "dotenv -e ../../.env --"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.0.0",
@@ -34,6 +35,7 @@
     "@types/react": "^19.0.7",
     "@types/react-dom": "^19.0.3",
     "dotenv": "^16.4.5",
+    "dotenv-cli": "^8.0.0",
     "drizzle-kit": "^0.30.1",
     "eslint": "^9.18.0",
     "eslint-config-next": "^15.1.4",

@@ -1,0 +1,13 @@
+{
+    "$schema": "https://turborepo.org/schema.json",
+    "ui": "tui",
+    "tasks": {
+      "dev": {
+        "persistent": true,
+        "cache": false
+      }
+    },
+    "globalEnv": ["DATABASE_URL"],
+    "globalPassThroughEnv": ["NODE_ENV", "CI", "npm_lifecycle_event"]
+  }
+  

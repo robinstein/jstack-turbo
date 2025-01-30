@@ -11,7 +11,7 @@ export const j = jstack.init<Env>()
 /**
  * Type-safely injects database into all procedures
  * @see https://jstack.app/docs/backend/middleware
- * 
+ *
  * For deployment to Cloudflare Workers
  * @see https://developers.cloudflare.com/workers/tutorials/postgres/
  */

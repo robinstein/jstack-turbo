@@ -1,0 +1,16 @@
+{
+  "name": "jstack-turbo",
+  "private": true,
+  "workspaces": ["apps/*"],
+  "packageManager": "bun@1.2.1",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --continue",
+    "lint": "turbo run lint --continue",
+    "format": "turbo run format --continue "
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "turbo": "^2.3.4"
+  }
+}
