@@ -1,5 +1,4 @@
-import { posts } from "@/server/db/schema"
-import { desc } from "drizzle-orm"
+import { posts, desc } from "@acme/db"
 import { z } from "zod"
 import { j, publicProcedure } from "../jstack"
 

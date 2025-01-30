@@ -1,16 +1,27 @@
 {
   "name": "jstack-turbo",
   "private": true,
-  "workspaces": ["apps/*", "packages/*", "tooling/*"],
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "tooling/*"
+  ],
   "packageManager": "bun@1.2.1",
   "scripts": {
     "build": "turbo run build",
+    "clean": "git clean -xdf node_modules",
+    "clean:workspaces": "turbo clean",
     "dev": "turbo run dev --continue",
     "lint": "turbo run lint --continue",
-    "format": "turbo run format --continue "
+    "format": "turbo run format --continue",
+    "db:generate": "turbo -F @acme/db db:generate",
+    "db:migrate": "turbo -F @acme/db db:migrate",
+    "db:push": "turbo -F @acme/db db:push",
+    "db:studio": "turbo -F @acme/db db:studio"
   },
   "devDependencies": {
     "@types/bun": "latest",
-    "turbo": "^2.3.4"
+    "turbo": "^2.3.4",
+    "typescript": "^5.7.3"
   }
 }

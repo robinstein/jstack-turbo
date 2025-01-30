@@ -1,5 +1,5 @@
 import { jstack } from "jstack"
-import { drizzle } from "drizzle-orm/postgres-js"
+import { drizzle } from "@acme/db"
 import { env } from "hono/adapter"
 
 interface Env {

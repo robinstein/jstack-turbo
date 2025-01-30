@@ -1,13 +1,20 @@
 {
-    "$schema": "https://turborepo.org/schema.json",
-    "ui": "tui",
-    "tasks": {
-      "dev": {
-        "persistent": true,
-        "cache": false
-      }
+  "$schema": "https://turborepo.org/schema.json",
+  "ui": "tui",
+  "tasks": {
+    "dev": {
+      "persistent": true,
+      "cache": false
     },
-    "globalEnv": ["DATABASE_URL"],
-    "globalPassThroughEnv": ["NODE_ENV", "CI", "npm_lifecycle_event"]
-  }
-  
+    "db:push": {
+      "cache": false,
+      "interactive": true
+    },
+    "db:studio": {
+      "cache": false,
+      "persistent": true
+    }
+  },
+  "globalEnv": ["DATABASE_URL"],
+  "globalPassThroughEnv": ["NODE_ENV", "CI", "npm_lifecycle_event"]
+}
